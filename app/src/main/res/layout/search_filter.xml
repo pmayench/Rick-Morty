@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_light">
+
+    <TextView
+        android:id="@+id/txt_Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="175dp"
+        android:fontFamily="monospace"
+        android:text="Filter"
+        android:textAllCaps="false"
+        android:textColor="@color/green_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="monospace"
+        android:text="Status"
+        android:textColor="@color/green_light"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Filter" />
+
+    <TextView
+        android:id="@+id/txt_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:text="Gender"
+        android:textColor="@color/green_light"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_button"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:textColor="@color/black_light"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Status">
+
+        <RadioButton
+            android:id="@+id/rbAlive"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Alive"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lblAnys" />
+
+        <RadioButton
+            android:id="@+id/rbDead"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Dead"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbUnknownStatus"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Unknown"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Gender">
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Female"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lblAnys" />
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Male"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lblAnys" />
+
+        <RadioButton
+            android:id="@+id/rbGenderless"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:text="Genderless"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lblAnys" />
+
+        <RadioButton
+            android:id="@+id/rbUnknownGender"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Unknown"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/green_light"
+            android:textColorLink="@color/green_dark"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
